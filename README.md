@@ -1,16 +1,36 @@
-# React + Vite
+#  Game Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kullanıcıların oynadıkları, tamamladıkları veya oynamayı planladıkları video oyunlarını takip edebilecekleri, durumlarını güncelleyebilecekleri modern bir **React + Vite** uygulamasıdır.
 
-Currently, two official plugins are available:
+🔗 **Canlı Demo:**(https://app.netlify.com/projects/warm-cheesecake-b3a9ad/deploys/6a85bcc3865e9aeadf3c87cc)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+### Özellikler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **CRUD Desteği:** Yeni oyun ekleme, oyun silme ve tamamlandı olarak işaretleme.
+* **Filtreleme:** Oyunları *Tümü, Oynanıyor, Tamamlandı, Ertelendi* sekmelerine göre anlık listeleme.
+* **LocalStorage:** Eklenen oyunların tarayıcı hafızasında saklanması (sayfa yenilendiğinde veriler kaybolmaz).
+* **Responsive Tasarım:** Tailwind CSS ile mobil ve masaüstü uyumlu karanlık mod arayüzü.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Teknolojiler
+
+* **Frontend:** React, Vite
+* **Stil:** Tailwind CSS
+* **İkonlar:** Lucide React
+* **Deployment:** Netlify
+
+---
+  ### Dosya Yapısı
+  game-tracker/
+├── public/              # Statik dosyalar
+├── src/
+│   ├── components/      # React bileşenleri (GameCard, GameForm)
+│   ├── App.jsx          # Ana state ve filtreleme yönetimi
+│   ├── main.jsx         # React başlangıç noktası
+│   └── index.css        # Tailwind direktifleri
+├── package.json         # Proje bağımlılıkları ve scriptler
+├── tailwind.config.js   # Tailwind konfigürasyonu
+└── vite.config.js       # Vite konfigürasyonu
